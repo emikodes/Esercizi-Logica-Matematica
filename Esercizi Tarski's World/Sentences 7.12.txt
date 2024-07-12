@@ -1,0 +1,17 @@
+ESERCIZIO 7.12
+==============
+
+1  Se *a* e' un tetraedro allora e' di fronte a *d*.
+	Tet(a) -> FrontOf(a,d)
+2  *a* e' alla sinistra o alla destra di *d* solo se *d* e' un cubo.
+	LeftOf(a,d) v RightOf(a,d) -> Cube(d)
+3  *c* si trova fra *a* ed *e*  oppure fra *a* e *d*.
+	Between(c,a,e) v Between(c,a,d)
+5  *c* e' alla destra di *d* solo se *b* e' alla destra di *c* e alla sinistra di *e*.
+	RightOf(c,d) -> RightOf(b,c) AND LeftOf(b,e)
+6  Se *e* e' un tetraedro, allora e' alla destra di *b* se e solo se e' anche di fronte a *b*.
+	(Tet(e) -> RightOf(e,b) ) <-> FrontOf(e,b)
+7  Se *b* e' un dodecaedro, allora se non e' di fronte a *d* non e' neppure dietro a *d*. 
+	Dodec(b) -> (!FrontOf(b,d) -> !BackOf(b,d))
+8  *c* e' dietro ad *a* ma di fronte a *e*. 
+	BackOf(c,a) AND FrontOf(c,e)

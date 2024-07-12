@@ -1,0 +1,1 @@
+7.2.3.24206wnds:Windows 86.2SntFC1720524204152D1720524345194S84973 @x ( Tet(x) $ ( /y LeftOf(x, y) & /y BackOf(x, y) ))@x@y@z ( (LeftOf(x, y) & BackOf(x, z)) $ z = z )@x ( Tet(x) $ /y (LeftOf(x, y) & BackOf(x, y)) )s=35953;
